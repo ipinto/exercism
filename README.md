@@ -1,2 +1,2 @@
 # exercism
-My exercism.io solutions
+My [exercism.io](http://exercism.io/) solutions.
