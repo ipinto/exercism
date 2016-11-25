@@ -1,5 +1,7 @@
 .gradle
 /**/.keep
+/**/*.pyc
+/**/*.iml
 
 build/
 /**/.idea/
