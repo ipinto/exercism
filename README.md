@@ -6,6 +6,7 @@ My [exercism.io](http://exercism.io/) solutions.
 * [Hello World](https://github.com/ipinto/exercism/tree/master/java/hello-world)
 * [Etl](https://github.com/ipinto/exercism/tree/master/java/etl)
 * [Nucleotide Count](https://github.com/ipinto/exercism/tree/master/java/nucleotide-count)
+* [Word Count](https://github.com/ipinto/exercism/tree/master/java/word-count)
 
 ## Python
 * [Hello World](https://github.com/ipinto/exercism/tree/master/python/hello-world)
