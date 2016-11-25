@@ -5,13 +5,11 @@ import java.util.Map;
 public class DNA {
 
     private String sequence;
+    private Map<Character, Integer> nucleotidesCount;
 
     public DNA(String sequence) {
         this.sequence = sequence;
-    }
-
-    public Integer count(Nucleotide nucleotide) {
-        return count(nucleotide.getRepresentation());
+        initNucleotidesCount();
     }
 
     public Integer count(char nucleotide) {
@@ -19,20 +17,25 @@ public class DNA {
             throw new IllegalArgumentException();
         }
 
-        return (int) sequence.chars().filter(element -> element == nucleotide).count();
+        return nucleotidesCount.get(nucleotide);
     }
 
     public Map<Character, Integer> nucleotideCounts() {
-        Map<Character, Integer> nucleotideHits = new HashMap<>();
-
-        for (Nucleotide nucleotide : Nucleotide.values()) {
-            nucleotideHits.put(nucleotide.getRepresentation(), count(nucleotide));
-        }
-
-        return nucleotideHits;
+        return nucleotidesCount;
     }
 
-    public enum Nucleotide {
+    private void initNucleotidesCount() {
+        nucleotidesCount = new HashMap<>();
+        for (Nucleotide nucleotide : Nucleotide.values()) {
+            nucleotidesCount.put(nucleotide.getRepresentation(), count(nucleotide));
+        }
+    }
+
+    private Integer count(Nucleotide nucleotide) {
+        return (int) sequence.chars().filter(element -> element == nucleotide.getRepresentation()).count();
+    }
+
+    private enum Nucleotide {
         A('A'), C('C'), G('G'), T('T');
 
         private Character representation;
