@@ -14,3 +14,4 @@ My [exercism.io](http://exercism.io/) solutions.
 * [Leap](https://github.com/ipinto/exercism/tree/master/python/leap)
 * [Clock](https://github.com/ipinto/exercism/tree/master/python/clock)
 * [Pangram](https://github.com/ipinto/exercism/tree/master/python/pangram)
+* [RNA Transcription](https://github.com/ipinto/exercism/tree/master/python/rna-transcription)
