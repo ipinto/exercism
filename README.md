@@ -15,3 +15,4 @@ My [exercism.io](http://exercism.io/) solutions.
 * [Clock](https://github.com/ipinto/exercism/tree/master/python/clock)
 * [Pangram](https://github.com/ipinto/exercism/tree/master/python/pangram)
 * [RNA Transcription](https://github.com/ipinto/exercism/tree/master/python/rna-transcription)
+* [Hamming](https://github.com/ipinto/exercism/tree/master/python/hamming)
